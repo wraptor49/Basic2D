@@ -17,8 +17,8 @@ using UnityEngine.InputSystem;
 
 public class CustomizablePlatformerMovement : MonoBehaviour
 {
-    [SerializeField] private float maxSpeed = 10f;
-    [SerializeField] private float jumpForce = 10f;
+    [SerializeField] private float maxSpeed = 5f;
+    [SerializeField] private float jumpForce = 5f;
     
     
     // Physics and collision
