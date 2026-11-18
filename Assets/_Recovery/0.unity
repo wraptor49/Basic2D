@@ -860,6 +860,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &521466093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521466087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d66d61f7740f31458fe19ce78c5328c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::uph
+  tagToActivate: Player
+  ps: {fileID: 1611712861}
+  SoundSource: {fileID: 521466092}
+  PickUpEffekt: {fileID: 8300000, guid: 0fc5974316cafa64589869e22f4fa44a, type: 3}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -981,9 +997,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UnityEventOnTrigger
   tagToActivate: Player
-  ps: {fileID: 0}
-  SoundSource: {fileID: 0}
-  PickUpEffekt: {fileID: 0}
+  onTriggerEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onTriggerExit:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!61 &684954483
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1242,9 +1261,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UnityEventOnTrigger
   tagToActivate: Player
-  ps: {fileID: 0}
-  SoundSource: {fileID: 0}
-  PickUpEffekt: {fileID: 0}
+  onTriggerEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onTriggerExit:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!212 &784816109
 SpriteRenderer:
   serializedVersion: 2
@@ -1350,9 +1372,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UnityEventOnTrigger
   tagToActivate: Player
-  ps: {fileID: 0}
-  SoundSource: {fileID: 0}
-  PickUpEffekt: {fileID: 0}
+  onTriggerEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onTriggerExit:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!212 &823238057
 SpriteRenderer:
   serializedVersion: 2
@@ -1505,9 +1530,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UnityEventOnTrigger
   tagToActivate: Player
-  ps: {fileID: 0}
-  SoundSource: {fileID: 0}
-  PickUpEffekt: {fileID: 0}
+  onTriggerEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onTriggerExit:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!212 &836210784
 SpriteRenderer:
   serializedVersion: 2
@@ -2299,9 +2327,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UnityEventOnTrigger
   tagToActivate: Player
-  ps: {fileID: 0}
-  SoundSource: {fileID: 0}
-  PickUpEffekt: {fileID: 0}
+  onTriggerEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onTriggerExit:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1415895549
 GameObject:
   m_ObjectHideFlags: 0
@@ -3026,6 +3057,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d7ef4cc14ebb0c4088b7be78ba59a9c, type: 3}
+--- !u!198 &1611712861 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7858013205909734729, guid: 9d7ef4cc14ebb0c4088b7be78ba59a9c, type: 3}
+  m_PrefabInstance: {fileID: 1525860969881112527}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1691422894
 GameObject:
   m_ObjectHideFlags: 0
@@ -9360,13 +9396,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: PickUp
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3696242982141739044, guid: 9d7ef4cc14ebb0c4088b7be78ba59a9c, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5032026659289720489, guid: 9d7ef4cc14ebb0c4088b7be78ba59a9c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 521466092}
+    - targetCorrespondingSourceObject: {fileID: 5032026659289720489, guid: 9d7ef4cc14ebb0c4088b7be78ba59a9c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 521466093}
   m_SourcePrefab: {fileID: 100100000, guid: 9d7ef4cc14ebb0c4088b7be78ba59a9c, type: 3}
 --- !u!1001 &6036187887022884485
 PrefabInstance:

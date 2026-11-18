@@ -1,12 +1,8 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
 
-public class PickUpScrips : MonoBehaviour
+public class uph : MonoBehaviour
 {
-    [Tooltip("The colliding object that we want to trigger these events with needs to use a tag of the same name as typed in this variable")]
+    
     public string tagToActivate = "Player";
 
     public ParticleSystem ps;
@@ -30,8 +26,8 @@ public class PickUpScrips : MonoBehaviour
             ps.Play();
             Destroy(GetComponent<CircleCollider2D>());
             Destroy(GetComponent<SpriteRenderer>());
-			Globals.Coins++;
+            Globals.Coins++;
         }
     }
-    
+
 }
