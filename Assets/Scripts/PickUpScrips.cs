@@ -4,12 +4,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class UnityEventOnTrigger : MonoBehaviour
+public class PickUpScrips : MonoBehaviour
 {
     [Tooltip("The colliding object that we want to trigger these events with needs to use a tag of the same name as typed in this variable")]
     public string tagToActivate = "Player";
 
     public ParticleSystem ps;
+    public AudioSource SoundSource;
+    public AudioClip PickUpEffekt;
 
     private void Awake()
     {
@@ -24,6 +26,7 @@ public class UnityEventOnTrigger : MonoBehaviour
     {
         if (other.CompareTag(tagToActivate))
         {
+            SoundSource.PlayOneShot(PickUpEffekt);
             ps.Play();
             Destroy(GetComponent<CircleCollider2D>());
             Destroy(GetComponent<SpriteRenderer>());
