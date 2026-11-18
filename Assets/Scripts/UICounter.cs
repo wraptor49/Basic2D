@@ -13,6 +13,12 @@ public class UICounter : MonoBehaviour
 
     public UnityEvent onComparedAndTrue;
     
+    private void Update()
+    {
+        counterText.text = Globals.Coins.ToString();
+    }
+    
+    
     // AddToCounter adds the value to the current counter-value. Use a negative value if you want to subtract.
     // Can be used to count pickups by adding one for each pickup that is picked up.
     public void AddToCounter(int add)

@@ -27,6 +27,7 @@ public class UnityEventOnTrigger : MonoBehaviour
             ps.Play();
             Destroy(GetComponent<CircleCollider2D>());
             Destroy(GetComponent<SpriteRenderer>());
+			Globals.Coins++;
         }
     }
     
