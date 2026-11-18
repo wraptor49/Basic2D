@@ -112,7 +112,7 @@ public class CustomizablePlatformerMovement : MonoBehaviour
             return false;
         }
     }
-
+    
     private void ApplyGravity()
     {
         // Applies a set gravity for when player is grounded
